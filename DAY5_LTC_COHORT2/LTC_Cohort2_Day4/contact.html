@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Contact</title>
+    <style>
+        /* styling for the contact form */
+        .contact-form{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: bisque;
+            /* border-radius: 8px; */
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+        } 
+        .contact-form h2{
+            text-align: center;
+            margin-bottom:20px;
+            color: aliceblue;
+        }
+        .contact-form label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: cadetblue;
+        }
+        .contact-form input,
+        .contact-form textarea{
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+        .contact-form button{
+            width: 100%;
+            padding: 10px;
+            background-color: grey;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <!--Logo-->
+        <h2>Noah Asionyi</h2>
+        <!--navigation menu-->
+        <!-- <h1>Get Me</h1> -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+   
+    <form class="contact-form" action="#" method="post">
+         <fieldset>
+        <legend>Enter Details To Contact Us</legend>
+        <label for="name">First Name</label>
+        <input type="text" name="first_name" id="firstname"><br>
+        <label for="secondname">Second Name</label>
+        <input type="text" name="Second_Name" id="secondname"><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="Male">Male
+        <input type="radio" name="gender" id="gender" value="Female">Female
+        <input type="radio" name="gender" id="gender" value="Other">Other <br>
+
+        <label for="email">Email</label> 
+        <input type="email" name="email" id="email" placeholder="you@example.com"><br>
+        <label for="D.O.B">D.O.B</label>
+        <INPUT type="date" name="D.O.B" id="D.O.B"><br>
+        <label for="message">Enter Message</label> 
+        <textarea name="message" id="message" rows="4" placeholder=" Enter Your Message"></textarea><br>
+
+        <!-- <input type="radio" name="contact_method" value="phone"> -->
+        <label for="contactmethod">Prefered Contact Method</label>
+        <select name="contactmethod" id="contactmethod">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+        </select>
+       <br><button type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+    </main>
+    <aside>
+        <h2>Side Notes</h2>
+        <p>Links infor, or ads.</p>
+    </aside>
+    <footer>
+        <p>&copy; 2026 Noah Asionyi</p>
+    </footer>
+    
+</body>
+</html>
